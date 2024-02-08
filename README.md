@@ -5,5 +5,5 @@
 
 <div>
   Si llegaste acá y deseas revisar lo que suba, sientene libre de hacerlo! ✌️ <br>
-  Espero que también te sirva para aprender o darte ideas para tus propios proyectos :	😌  <br>
+  Espero que también te sirva para aprender o darte ideas para tus propios proyectos.	😌  <br>
 </div>
