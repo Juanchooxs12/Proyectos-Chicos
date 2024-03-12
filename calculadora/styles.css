@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: beige;
+}
+.main{
+    background-color: lightslategrey;
+    color: #fff;
+    height: auto;
+    width: 30vh;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+.btn{
+    height: auto;
+    width: 6vh;
+}
+
+.calculadora{
+    display: flex;
+    margin: 0 auto;
+}
