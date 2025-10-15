@@ -17,9 +17,9 @@ La contraseña se genera de forma aleatoria utilizando la librería random de Py
 🚀 ¿Cómo usarlo?
 Simplemente ejecuta el script en tu terminal y obtendrás una nueva contraseña segura al instante.
 
-´´´bash
+```bash
 python tu_nombre_de_archivo.py
-´´´
+```
 
 
 ¡Y listo! Tu nueva contraseña aparecerá en la pantalla. 💻
