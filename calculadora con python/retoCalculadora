@@ -1,0 +1,106 @@
+#Este es un ejercicio breve de una calculadora con funciones simples, todo es ejecutado por consola con este ejercicio, los resultados se muestran como decimales.
+
+
+#Crear una calculadora interactiva que tome una entrada de usuario y realice 
+#una de las cuatro operaciones básicas (suma, resta, multiplicación o división) 
+#Tomando dos números que deberá pedir al usuario dentro de la función calculadora()
+#Para esto deberá crear al menos 4 funciones: una para cada operación matemática
+#Las cuatro funciones deben ser creadas por separado, pero, una vez creadas, deberá integrar cada una de ellas dentro
+#de la función calculadora()
+
+
+#función suma
+def suma(num1, num2):
+    resultadoSuma = num1 + num2
+    return resultadoSuma
+
+#función resta
+def resta(num1, num2):
+    resultadoResta = num1 - num2
+    return resultadoResta
+
+#función multiplicación
+def multiplicacion(num1, num2):
+    resultadoMultiplicacion = num1 * num2
+    return resultadoMultiplicacion
+
+
+#función division
+def division(num1, num2):
+    if num2 != 0:
+        resultadoDivision = num1 / num2
+        return resultadoDivision
+    else:
+        print("No se puede dividir por 0")
+2
+#función que muestra el menú
+def mostrar_menu():
+    print("------------------------------------------")
+    print("Seleccione una operación:")
+    print("1. Suma")
+    print("2. Resta")
+    print("3. Multiplicación")
+    print("4. División")
+    print("5. Salir")
+    print("------------------------------------------")
+
+""" def otroIntento():
+    otro_calculo = input("¿Desea hacer otro cálculo? (Si/No): ").upper()
+    """
+
+def calculadora():
+    while True:
+        mostrar_menu()
+        opcion = int(input('Ingrese el número de la operación deseada: '))
+        #Sumar
+        if opcion == 1:
+            print("Escogiste Suma")
+            valor1 = float(input('Ingrese el número 1: '))
+            valor2 = float(input('Ingrese el número 2: '))
+            resultado = suma(valor1, valor2)
+            print(f"Resultado: {resultado}")
+            otro_calculo = input("¿Desea hacer otro cálculo? (Si/No): ").upper()
+            if otro_calculo != 'Si'.upper():
+                print("Saliste")
+                break        
+        #Restar
+        elif opcion == 2:
+            print("Escogiste Resta")
+            valor1 = float(input('Ingrese el número 1: '))
+            valor2 = float(input('Ingrese el número 2: '))
+            resultado = resta(valor1, valor2)
+            print(f"Resultado: {resultado}")
+            otro_calculo = input("¿Desea hacer otro cálculo? (Si/No): ").upper()
+            if otro_calculo != 'Si'.upper():
+                print("Saliste")
+                break  
+        #Multiplicar
+        elif opcion == 3:
+            print("Escogiste Multiplicacion")
+            valor1 = float(input('Ingrese el número 1: '))
+            valor2 = float(input('Ingrese el número 2: '))
+            resultado = multiplicacion(valor1, valor2)
+            print(f"Resultado: {resultado}")
+            otro_calculo = input("¿Desea hacer otro cálculo? (Si/No): ").upper()
+            if otro_calculo != 'Si'.upper():
+                print("Saliste")
+                break
+        #Dividir
+        elif opcion == 4:
+            print("Escogiste Division")
+            valor1 = float(input('Ingrese el número 1: '))
+            valor2 = float(input('Ingrese el número 2: '))
+            resultado = division(valor1, valor2)
+            print(f"Resultado: {resultado}")
+            otro_calculo = input("¿Desea hacer otro cálculo? (Si/No): ").upper()
+            if otro_calculo != 'Si'.upper():
+                print("Saliste")
+                break
+
+        elif opcion == 5:
+            print("Saliste")
+            break
+
+        #resto del código
+
+calculadora()
